@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "new soojie post"
+title:  "new soojie post2"
 date:   2018-10-09 12:44:41 +0900
 categories: jekyll update
 ---
