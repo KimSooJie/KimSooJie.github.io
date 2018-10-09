@@ -3,4 +3,5 @@ layout: post
 title:  "new soojie post3"
 date:   2018-10-09 12:44:41 +0900
 categories: jekyll update
+permalink: /:title
 ---
