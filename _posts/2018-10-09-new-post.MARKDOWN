@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "new soojie post"
+date:   2018-10-09 12:44:41 +0900
+categories: jekyll update
+permalink: /:title
+---
+# aaa
+### aaa
+###### aaa
+
+testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest.
+testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest.
+
+>hello
+>> hellohello
+
+test**test**test
+
+> hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello
+>> hellohello
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+  puts "new"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
