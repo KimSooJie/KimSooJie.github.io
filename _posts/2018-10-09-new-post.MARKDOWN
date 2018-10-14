@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "new soojie post"
+title:  "new soojie post 한글"
 date:   2018-10-09 12:44:41 +0900
 categories: jekyll update
 permalink: /:title
@@ -8,7 +8,7 @@ permalink: /:title
 # aaa
 ### aaa
 ###### aaa
-
+한글
 testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest.
 testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest.
 
