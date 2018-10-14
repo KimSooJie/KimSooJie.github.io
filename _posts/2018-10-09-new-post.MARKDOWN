@@ -19,3 +19,12 @@ test**test**test
 
 > hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello
 >> hellohello
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+  puts "new"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
