@@ -5,7 +5,6 @@ date: 2018-10-14 19:25:00
 categories: jekyll update
 permalink: /:title
 ---
-<meta charset="UTF-8">
 now
 ¼öÁö
 
