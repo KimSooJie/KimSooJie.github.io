@@ -1,0 +1,8 @@
+---
+layout: post
+title: "TEST"
+date: 2018-10-14 12:44:41 +0900
+categories: jekyll update
+permalink: /:title
+---
+testtest
