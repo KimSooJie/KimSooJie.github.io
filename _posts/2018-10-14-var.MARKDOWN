@@ -6,8 +6,4 @@ categories: jekyll update
 permalink: /:title
 ---
 now
-<table>
-    <tr>
-        <td>한글</td>
-    </tr>
-</table>
+한글
