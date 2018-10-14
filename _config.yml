@@ -20,7 +20,7 @@ github_username: kimsoojie
 
 # Build settings
 markdown: kramdown
-encoding: "utf-8"
+encoding: utf-8
 theme: minima
 plugins:
   - jekyll-feed
@@ -36,3 +36,10 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+#   - apt-get update >/dev/null
+#   - apt-get install -y locales >/dev/null
+#   - echo "en_US UTF-8" > /etc/locale.gen
+#   - locale-gen en_US.UTF-8
+#   - export LANG=en_US.UTF-8
+#   - export LANGUAGE=en_US:en
+#   - export LC_ALL=en_US.UTF-8
