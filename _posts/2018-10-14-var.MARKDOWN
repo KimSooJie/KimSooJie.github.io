@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Effective"
+title: "Effective한글"
 date: 2018-10-14 19:25:00
 categories: jekyll update
 permalink: /:title
 ---
 now
-한글
+
