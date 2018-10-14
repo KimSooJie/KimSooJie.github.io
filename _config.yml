@@ -14,13 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: KimSooJie Page
-encoding: utf-8
 email: sujieee0821@gmail.com
 twitter_username: sujieee0821
 github_username: kimsoojie
 
 # Build settings
 markdown: kramdown
+encoding: utf-8
 theme: minima
 plugins:
   - jekyll-feed
