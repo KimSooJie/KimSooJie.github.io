@@ -20,7 +20,7 @@ github_username: kimsoojie
 
 # Build settings
 markdown: kramdown
-encoding: utf-8
+encoding: "utf-8"
 theme: minima
 plugins:
   - jekyll-feed
