@@ -1,0 +1,7 @@
+---
+layout: post
+title: "Effective C# :: 지역변수를 선언할때 var를 사용하는것"
+date: 2018-10-14 12:44:41 +0900
+categories: jekyll update
+permalink: /:title
+---
