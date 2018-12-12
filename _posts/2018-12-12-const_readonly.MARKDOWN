@@ -16,8 +16,8 @@ C#은 const 키워드를 사용하여 선언하는 컴파일타임 상수와, re
 2_ 내장된 타입에 대해서만 사용가능하다.(int, float, enum, null 등)
 
 {% highlight ruby %}
-   private const MyClass _class = new MyClass(); // 불가능
-   private const int _number = 8; // 가능
+   public const MyClass _class = new MyClass(); // 불가능
+   public const int _number = 8; // 가능
 {% endhighlight %}
 
 3_ 참조코드를 생성해서 값을 참조하지 않기때문에 성능이 더 빠르다. 
@@ -32,8 +32,8 @@ C#은 const 키워드를 사용하여 선언하는 컴파일타임 상수와, re
 2_ 생성자로 초기화가 가능하다.
 
 {% highlight ruby %}
-   private static readonly MyClass _class = new MyClass(); // 가능
-   private static readonly int _number = 8; // 가능
+   public static readonly MyClass _class = new MyClass(); // 가능
+   public static readonly int _number = 8; // 가능
 {% endhighlight %}
 
 3_ 컴파일타임에 참조코드가 생성되고 런타임에 대체된다. 
