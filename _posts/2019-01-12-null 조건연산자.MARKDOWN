@@ -1,0 +1,52 @@
+﻿---
+layout: post
+title: "Effective C# :: 이벤트 호출할때 null 조건 연산자"
+date: 2019-01-12 12:44:41 +0900
+categories: jekyll update
+permalink: /:title
+---
+###### **빌 와그너 저/김명신 역,Effective C# (3판) 강력한 C#코드를 구현하는 50가지 전략과 기법 [eBook]** 스터디 요약 및 정리
+
+{% highlight ruby %}
+  private EventHandler<int> update;
+  int count = 0;
+
+  public void RaiseUpdate()
+  {
+	if(update != null) update(this, count);
+  }
+{% endhighlight %}
+
+update 이벤트가 null 이 아님을 확인했지만 이벤트를 발생하기직전에 다른 스레드에서 이벤트 핸들러의 등록을 취소했다면,
+NullReferenceException이 발생한다.
+
+{% highlight ruby %}
+  private EventHandler<int> update;
+  int count = 0;
+
+  public void RaiseUpdate()
+  {
+	var handler = update;
+	if(handler != null) handler(this, count);
+  }
+{% endhighlight %}
+
+이것은 이벤트를 안전하게 발생시키는 권장코드이다. 이벤트에 대한 할당문에서 오른쪽 객체에 대한 얕은복사본(shallow copy) 을 만든다.
+만약 스레드가 이벤트에 대한 구독을 취소시키더라도 지역변수에 할당된 내용은 변경되지 않았기 때문에 스레드 race condition 발생에 영향을 받지 않는다.
+하지만 이벤트 발생때 마다 복사해서 사용하는 것은 마치 필요없는 코드같이 보이기도 하고 적절하지 않아보인다. null 조건연산자를 사용하면
+코드를 더 간단하게 작성할 수 있다.
+
+{% highlight ruby %}
+  private EventHandler<int> update;
+  int count = 0;
+
+  public void RaiseUpdate()
+  {
+	update?.Invoke(this,count);
+  }
+{% endhighlight %}
+
+null 조건연산자 (?.) 를 사용하는 것과 if문으로 null을 확인하는 것이 비슷해보이지만, ? 연산자의 왼쪽을 평가하고 메서드를 수행하는 과정이
+원자적(atomic)으로 수행된다는 점이 다르다. 멀티스레드환경에서 안전할 뿐만 아니라 더 간결하다. 어떤 경우라도 null 조건 연산자를 사용하는 방법은
+단순하고 명확하기 때문에 좋다.
+
