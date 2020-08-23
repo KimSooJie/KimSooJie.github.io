@@ -15,8 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: KimSooJie Page
 email: sujieee0821@gmail.com
-instagram: soojie_kim
-github: kimsoojie
+instagram_username: soojie_kim
+github_username: kimsoojie
 
 # Build settings
 markdown: kramdown
