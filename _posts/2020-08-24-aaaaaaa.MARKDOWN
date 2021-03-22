@@ -5,6 +5,6 @@ date: 2020-08-24 12:44:41 +0900
 categories: jekyll update
 permalink: /:title
 ---
-###### **빌 와그너 저/김명신 역,Effective C# (3판) 강력한 C#코드를 구현하는 50가지 전략과 기법 [eBook]** 스터디 요약 및 정리
+###### **soojiesoojie
 
 testtesttest
